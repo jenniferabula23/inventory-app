@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>inventory app</title>
+  <!-- MDB icon -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    html,
+    body,
+    header,
+    #intro {
+      height: 90%;
+      background: linear-gradient(90deg, #F5F5F5 0% #F0FFF0 40%);
+    }
+
+    #intro {
+      background: url("images/young-farmer-fresh-produce-isolated-white-background-young-farmer-fresh-produce-isolated-white-background-138859954.jpg")no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .top-nav-collapse {
+      background-color: #24355C;
+    }
+
+    @media (max-width: 768px) {
+      .navbar:not(.top-nav-collapse) {
+        background-color: #24355C;
+      }
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+        background-color: #24355C;
+      }
+    }
+    .card-header{
+      text-align: center;
+      font-style: bold;
+      font-family:fantasy;
+    }
+    .card-title{
+      text-align: center;
+      font-family: cursive;
+    }
+  </style>
+
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Updates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Equipments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Store</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</head>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<body>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="card">
+          <h6 class="card-header">ADD NEW ENTRY</h6>
+          <div class="card-body">
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label for="validationCustom01" class="form-label">Full name</label>
+                  <input type="text" class="form-control" id="validationCustom01" value="" required />
+                  <div class="valid-feedback">Looks good!</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label for="validationCustom02" class="form-label">Position</label>
+                  <input  type="text"  class="form-control" id="validationCustom02" value="" required/>
+                  <div class="valid-feedback">Looks good!</div>
+                </div>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              
+              
+
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label for="validationCustom03" class="form-label">ID Number</label>
+                  <input type="text" class="form-control" id="validationCustom03" required />
+                  <div class="invalid-feedback">Please provide a valid code.</div>
+                </div>
+              </div>
+
+              <br>
+              <br>
+              
+
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label for="validationCustom03" class="form-label">Aim</label>
+                  <input type="text" class="form-control" id="validationCustom03" required />
+                  <div class="invalid-feedback">Please provide a valid reason.</div>
+                </div>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="customFile">Upload image </label>
+                  <input type="file" class="form-control" id="customFile" />        
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="customFile">Category</label>
+                  <input type="text" class="form-control" id="validationCustom03" required />      
+                </div>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+             
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required/>
+                  <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                  </label>
+                  <div class="invalid-feedback">You must agree before submitting.</div>
+                </div>
+              </div>
+
+              <br>
+              <br>
+              <br>
+              <br>
+              <div class="col-3">
+                <button class="btn btn-primary" type="submit">Add</button>
+              </div>
+              <div class="col-3">
+                <h6 class="my-0">Quantity</h6>
+                <span class="text-muted"><input type="number" value="1" aria-label="Search" class="form-control" style="width: 100px"></span>
+              </div>
+              <div class="col-3">
+                <button class="btn btn-success" type="submit">Info</button>
+              </div>
+              <div class="col-3">
+                <button class="btn btn-danger" type="submit">Delete</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+ 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+    <footer class="bg-light text-center">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-success btn-floating m-1" style="background-color: #3b5998;" href="#!" ><i class="fab fa-facebook-f"></i></a>
+          <!-- Twitter -->
+          <a class="btn btn-success btn-floating m-1" style="background-color: #55acee;" href="#!" ><i class="fab fa-twitter"></i></a>
+          <!-- Google -->
+          <a class="btn btn-success btn-floating m-1" style="background-color: #dd4b39;" href="#!" ><i class="fab fa-google"></i ></a>
+          <!-- Instagram -->
+          <a class="btn btn-success btn-floating m-1" style="background-color: #ac2bac;" href="#!" ><i class="fab fa-instagram"></i ></a>
+          <!-- Linkedin -->
+          
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(37, 180, 8, 0.2);">
+        © 2021 Copyright:
+        <a  href="https://mdbootstrap.com/">inventoryapp.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  
+</body>
+</html>
